@@ -1,0 +1,39 @@
+body {
+    margin:0;
+    padding:0;
+    display:flex;
+    align-items:center ;
+    justify-content:center ;
+    flex-wrap:wrap;
+    background-color:#000;
+}
+span{
+    margin:10px 5px 0;
+    transform:skew(10deg) rotateY(360deg);
+    font-size:1.8em;
+    cursor:pointer ;
+    padding:10px 12px;
+    transition:background 0.2s ease , color 0.4s ease;
+    border-radius:50%;
+}
+span:hover{
+    background-color:#0f0;
+    box-shadow:
+    0 0 20px #0f0,
+    0 0 50px #0f0,
+    0 0 100px #0f0,
+    0 0 150px #0f0,
+    0 0 200px #0f0;
+    color:#777;
+    animation:animate 0.5s infinite ;
+}
+@keyframes animate{
+    0%{
+        filter:hue-rotate(0deg);
+        background-color:#ff0044;
+    }
+    100%{
+        filter:hue-rotate(360deg);
+        background-color:#4caddd;
+    }
+}
